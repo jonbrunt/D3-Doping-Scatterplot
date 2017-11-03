@@ -1,0 +1,49 @@
+body {
+  min-width: 1300px;
+  min-height: 600px;
+  background: #1c92d2; 
+  background: -webkit-linear-gradient(to right, #ff4819, #ff9419);
+  background: linear-gradient(to right, #ff4819, #ff9419);
+  -webkit-user-select: none;
+  -moz-user-select: none;     
+  -ms-user-select: none;      
+  user-select: none;
+  font-family: 'Roboto', sans-serif;
+}
+
+.svg {
+  margin-top: 25px;
+  position: relative;
+  left: 50%;
+  background-color: #e0e0d1;
+  box-shadow: 5px 5px 5px #2a2a2a;
+}
+
+.circles:hover {
+  opacity: 0.5;
+}
+
+.xAxis .tick line, .yAxis .tick:not(:first-of-type) line {
+  stroke: #bbb;
+  stroke-dasharray: 10px, 10px;
+}
+
+.yAxis .tick:last-of-type line {
+  stroke: none;
+}
+
+.info {
+  font-size: 0.8em;
+  font-weight: 600;
+}
+
+.tooltip {
+  opacity: 0;
+  position: absolute;
+  max-width: 200px;
+  padding: 8px;
+  background-color: #87cefa;
+  pointer-events: none;
+  border: solid 5px #1232b2;
+  border-radius: 15px;
+}
