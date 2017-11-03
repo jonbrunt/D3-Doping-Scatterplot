@@ -112,7 +112,7 @@ function main(dataSet) {
     .style('font-size', '0.8em')
     .style('letter-spacing', '0.5px')
     .style('text-anchor', 'middle')
-    .text('Design & Development By Jonathan M. Brunt | 2017 | Data Courtesy of FCC, https://raw.githubusercontent.com/FreeCodeCamp/ProjectReferenceData/master/cyclist-data.json');
+    .text('Design & Development By Jonathan M. Brunt | 2017 | Data Courtesy of FCC');
   // data tooltip
   const tooltip = d3.select('body')
     .append('div')
@@ -120,6 +120,7 @@ function main(dataSet) {
 
   // reveals tooltip data for circles
   function tooltipOn(d) {
+    d3.event.preventDefault();
     tooltip
       .style('left', `${d3.event.x + 15}px`)
       .style('top', `${d3.event.y - (tooltip.node().offsetHeight / 1.5)}px`)
@@ -132,6 +133,7 @@ function main(dataSet) {
   }
   // hides tooltip data display
   function tooltipOff() {
+    d3.event.preventDefault();
     tooltip
       .style('opacity', '0');
   }
