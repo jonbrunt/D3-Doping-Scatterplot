@@ -112,7 +112,7 @@ function main(dataSet) {
     .style('font-size', '0.8em')
     .style('letter-spacing', '0.5px')
     .style('text-anchor', 'middle')
-    .text('Design & Development By Jonathan M. Brunt | ${new Date().getFullYear()} | Data Courtesy of FCC');
+    .text(`Design & Development By Jonathan M. Brunt | ${new Date().getFullYear()} | Data Courtesy of FCC`);
   // data tooltip
   const tooltip = d3.select('body')
     .append('div')
